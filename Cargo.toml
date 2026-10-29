@@ -1,0 +1,19 @@
+[package]
+name = "strata-log"
+version = "0.1.0"
+edition = "2021"
+description = "A checksummed append-only event log with atomic batch recovery"
+license = "MIT"
+repository = "https://github.com/adinax031-boop/strata-log"
+
+[lib]
+name = "strata_log"
+path = "lib.rs"
+
+[[bin]]
+name = "strata"
+path = "main.rs"
+
+[[test]]
+name = "recovery"
+path = "recovery.rs"
